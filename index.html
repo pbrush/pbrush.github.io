@@ -22,10 +22,46 @@
             <img src="me.jpg" alt="Your Photo" class="profile-photo">
             <p>I am a robotics engineer from Worcester Polytechnic Institute; my interests include deep learning, drones, and hiking!</p>
         </section>
+        <section class="slider">
+            <div class="slider-container">
+                <div class="card">
+                    <img src="flower2.jpeg" alt="Description 1">
+                    <p>This is a short description for Card 1.</p>
+                </div>
+                <div class="card">
+                    <img src="moon.jpeg" alt="Description 2">
+                    <p>This is a short description for Card 2.</p>
+                </div>
+                <div class="card">
+                    <img src="drone.png" alt="Description 3">
+                    <p>This is a short description for Card 3.</p>
+                </div>
+                <div class="card">
+                    <img src="robot_arm.png" alt="Description 4">
+                    <p>This is a short description for Card 4.</p>
+                </div>
+                <!-- Add more cards as needed -->
+            </div>
+        </section>
+        
 
     </main>
     <footer>
         <p>&copy; 2024 Phillip Brush | Contact @ pdbrush33@comcast.net</p>
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const sliderContainer = document.querySelector('.slider-container');
+            const cards = document.querySelectorAll('.card');
+            
+            // Clone the first few cards to create an infinite loop effect
+            for (let i = 0; i < 3; i++) {
+                const clone = cards[i].cloneNode(true);
+                sliderContainer.appendChild(clone);
+            }
+        });
+        </script>
+        
 </body>
 </html>
