@@ -1,0 +1,12 @@
+/* components/Home.css */
+.home {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .landing-image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+  }
+  
