@@ -1,0 +1,39 @@
+.card-slider-container {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 100vw; /* Adjust to fit your layout */
+    height: 200px; /* Adjust height as needed */
+  }
+  
+  .card {
+    min-width: 200px;
+    margin-right: 10px; /* Reduce this value to decrease spacing */
+    padding: 10px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(186, 24, 24, 0.1);
+    position: absolute;
+    right: -250px; /* Start outside the screen */
+    animation: slideLeft 10s linear infinite;
+  }
+  
+  .card-image {
+    width: 80%;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .card-content {
+    padding: 1px;
+    text-align: center;
+  }
+  
+  @keyframes slideLeft {
+    0% {
+      right: -250px;
+    }
+    100% {
+      right: 100vw; /* Adjust based on container size */
+    }
+  }
+  
