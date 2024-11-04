@@ -4,34 +4,29 @@ import linkedin from './images/linkedin-mark.svg'
 import youtube from './images/youtube-mark.svg'
 import me from './images/me.jpg'
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 
 
 // CUSTOM
 import Home from './components/Home';
+import Projects from './components/Projects';
+import About from './components/About';
 import Navbar from './components/Navbar';
 
 function App() {
   return (
     <div className="App">
-      <p> how about this</p>
-      <Router>
-        <div className="App">
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            {/* <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Projects />} /> */}
-          </Routes>
-        </div>
-      </Router>
-      <header className="App-header">
-        <p> Where does this go</p>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Editing this should change something
-        </p>
-        <div>
+      <Navbar />
+      <div className="container">
+        <Routes>
+          <Route>
+            <Route path="/"         element={ <Home />      }/>
+            <Route path="/Projects"  element={ <Projects />  }/>
+            <Route path="/About"    element={ <About />     }/>
+          </Route>
+        </Routes>
+      </div>
+      <div>
           <a
             className="App-link"
             href="https://github.com/pbrush"
@@ -59,9 +54,16 @@ function App() {
             <img src={youtube} className="youtube-svg" alt="yt" />
           </a>
         </div>
+      {/* <header className="App-header">
+        <p> Where does this go</p>
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Editing this should change something
+        </p>
+        
 
 
-      </header>
+      </header> */}
     </div>
   );
 }
