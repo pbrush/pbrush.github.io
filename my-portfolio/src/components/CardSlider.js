@@ -1,69 +1,44 @@
 import React from 'react';
 import './CardSlider.css'; // Include CSS file for styling
+import me from '../images/me.jpg';
+import bee from '../images/cropped_bee.png';
+import voltaic from '../images/voltaic.png';
 
 const CardSlider = () => {
   // Sample card data
   const cards = [
     {
         id: 1,
-        image: '../images/me.jpg', // Replace with your image URL
+        image: me, // Replace with your image URL
         title: 'Card 1',
-        description: 'This is the first card',
     },
     {
         id: 2,
-        image: 'https://via.placeholder.com/150',
-        title: 'Card 2',
-        description: 'This is the second card',
+        image: bee,
+        title: 'Micro Drone Demo',
     },
     {
         id: 3,
-        image: 'https://via.placeholder.com/150',
-        title: 'Card 3',
-        description: 'This is the third card',
+        image: voltaic,
+        title: '3lb Combat Robot',
     },
-    // {
-    //     id: 4,
-    //     image: 'https://via.placeholder.com/150',
-    //     title: 'Card 4',
-    //     description: 'This is the fourth card',
-    // },
-    // {
-    //     id: 5,
-    //     image: 'https://via.placeholder.com/150', // Replace with your image URL
-    //     title: 'Card 5',
-    //     description: 'This is the fifth card',
-    // },
-    // {
-    //     id: 6,
-    //     image: 'https://via.placeholder.com/150',
-    //     title: 'Card 6',
-    //     description: 'This is the sixth card',
-    // },
-    // {
-    //     id: 7,
-    //     image: 'https://via.placeholder.com/150',
-    //     title: 'Card 7',
-    //     description: 'This is the seventh card',
-    // },
-    // {
-    //     id: 8,
-    //     image: 'https://via.placeholder.com/150',
-    //     title: 'Card 8',
-    //     description: 'This is the eighth card',
-    // },
-    
-    // Add more cards as needed
+    {
+      id: 4,
+      image: voltaic,
+      title: '3lb Combat Robot',
+    },
   ];
 
   return (
     <div className="card-slider-container">
-      {cards.map((card, index) => (
-        <div className="card" key={card.id} style={{ animationDelay: `${index * 2}s` }}>
-          <img src={card.image} alt={card.title} className="card-image" />
-          <div className="card-content">
-            <h3>{card.title}</h3>
-            <p>{card.description}</p>
+      {cards.map((card) => (
+        <div key={card.id} className="card">
+          <div className="card-body">
+            <img src={card.image} alt={card.title} className="card-image" />
+            <div className="card-content">
+              <h3>{card.title}</h3>
+              <p>{card.description}</p>
+            </div>
           </div>
         </div>
       ))}

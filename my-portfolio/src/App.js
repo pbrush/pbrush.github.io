@@ -1,8 +1,6 @@
-import logo from './logo.svg';
 import github from './images/github-mark.svg'
 import linkedin from './images/linkedin-mark.svg'
 import youtube from './images/youtube-mark.svg'
-import me from './images/me.jpg'
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
 
@@ -18,6 +16,7 @@ function App() {
     <div className="App">
       <Navbar />
       <div className="container">
+
         <Routes>
           <Route>
             <Route path="/"         element={ <Home />      }/>
