@@ -10,6 +10,7 @@ import Home from './components/Home';
 import Projects from './components/Projects';
 import About from './components/About';
 import Navbar from './components/Navbar';
+import WorkExperience from './components/WorkExperience';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route>
             <Route path="/"         element={ <Home />      }/>
             <Route path="/Projects"  element={ <Projects />  }/>
+            <Route path="/WorkExperience"    element={ <WorkExperience />     }/>
             <Route path="/About"    element={ <About />     }/>
           </Route>
         </Routes>
@@ -52,6 +54,11 @@ function App() {
           >
             <img src={youtube} className="youtube-svg" alt="yt" />
           </a>
+        </div>
+        <div>
+          <p>
+            &copy; 2024 Phillip Brush | Contact: pdbrush33@comcast.net or (978) 831-7440
+            </p>
         </div>
       {/* <header className="App-header">
         <p> Where does this go</p>

@@ -1,0 +1,50 @@
+.work-experience {
+  padding: 20px;
+  text-align: center;
+}
+
+.work-experience-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Two cards per row */
+  gap: 20px;
+  padding: 20px;
+}
+
+.work-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(186, 24, 24, 0.1);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.work-image {
+  width: 300px; /* Adjust as needed */
+  height: 300px; /* Adjust as needed */
+  object-fit: cover;
+  border-radius: 0%;
+  margin-bottom: 10px;
+}
+
+.work-details {
+  text-align: center;
+}
+
+.work-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.work-description {
+  font-size: 1rem;
+  color: #555;
+  margin: 10px 0;
+}
+
+.work-date {
+  font-size: 0.9rem;
+  color: #888;
+}
