@@ -1,29 +1,30 @@
 import React from 'react';
 import './WorkExperience.css'; // Make sure to add the styles below in WorkExperience.css
-import companyLogo1 from '../images/pear_logo.png'; // Example image
-import companyLogo2 from '../images/alert_logo.png'; // Example image
+import pear_logo from '../images/pear_logo.png'; // Example image
+import alert_logo from '../images/alert_logo.png'; // Example image
+import wpi_logo from '../images/wpi_logo.png'; // Example image
 
 const workExperiences = [
   {
     id: 1,
-    image: companyLogo1,
-    title: 'Software Developer at Company One',
-    description: 'Worked on developing web applications and maintaining the company’s core software.',
-    date: 'Jan 2022 - Present',
+    image: pear_logo,
+    title: 'Research Assistant',
+    description: 'Student researcher under Manoj Velmurugan in Nitin J Sankets Pear group',
+    date: 'May 2024 - Present',
   },
   {
     id: 2,
-    image: companyLogo2,
-    title: 'Junior Developer at Company Two',
-    description: 'Collaborated on front-end development for various projects, including UI/UX enhancements.',
-    date: 'Jun 2020 - Dec 2021',
+    image: alert_logo,
+    title: 'Automation Engineering Intern',
+    description: 'Automation Engineer Intern for the Hardware Support group',
+    date: 'May 2023 - Aug 2023',
   },
   {
     id: 3,
-    image: companyLogo1,
-    title: 'Intern at Company One',
-    description: 'Assisted in backend development and performed code reviews for small-scale projects.',
-    date: 'Jan 2020 - May 2020',
+    image: wpi_logo,
+    title: 'Teacher Assistant',
+    description: 'Grader for Deep Learning for Perception course and Lab assistant for Intro to CAD course',
+    date: 'Jan 2023 - May 2023, Aug 2024 - Oct 2024',
   },
   // Add more work experience objects as needed
 ];

@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth; /* Adds a smooth scrolling effect */
+}
+
 .App {
   text-align: center;
 }

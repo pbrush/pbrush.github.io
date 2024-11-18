@@ -6,8 +6,9 @@ import myPhoto from '../images/me.jpg'; // Replace with your image path
 import wpi_logo from '../images/wpi_logo.png';
 import pear_logo from '../images/pear_logo.png';
 import alert_logo from '../images/alert_logo.png';
-import transcript from '../images/transcript.png'
-import resume from '../images/resume.png'
+import transcript from '../images/transcript.png';
+import pbe from '../images/pbe.png';
+import resume from '../images/resume.png';
 
 export default function About() {
   return (
@@ -82,6 +83,15 @@ export default function About() {
           >
             <h3 className="vertical-timeline-element-title">Internship at Alert Innovation</h3>
             <p>as a Automation Engineering Inter</p>
+          </VerticalTimelineElement>
+
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="2/14/2023"
+            icon={<img src={pbe} alt="icon" className="timeline-icon"/>}
+          >
+            <h3 className="vertical-timeline-element-title">Inducted to Rho Beta Epsilon</h3>
+            <p>WPI's Robotics Engineering Honor Society</p>
           </VerticalTimelineElement>
 
           <VerticalTimelineElement

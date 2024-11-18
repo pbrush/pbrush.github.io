@@ -3,6 +3,7 @@ import linkedin from './images/linkedin-mark.svg'
 import youtube from './images/youtube-mark.svg'
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
+import ProjectDetail from './components/ProjectDetail';
 
 
 // CUSTOM
@@ -22,6 +23,7 @@ function App() {
           <Route>
             <Route path="/"         element={ <Home />      }/>
             <Route path="/Projects"  element={ <Projects />  }/>
+            <Route path="/projects/:id" element={<ProjectDetail />} /> {/* Add this line */}
             <Route path="/WorkExperience"    element={ <WorkExperience />     }/>
             <Route path="/About"    element={ <About />     }/>
           </Route>
@@ -60,16 +62,6 @@ function App() {
             &copy; 2024 Phillip Brush | Contact: pdbrush33@comcast.net or (978) 831-7440
             </p>
         </div>
-      {/* <header className="App-header">
-        <p> Where does this go</p>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Editing this should change something
-        </p>
-        
-
-
-      </header> */}
     </div>
   );
 }
