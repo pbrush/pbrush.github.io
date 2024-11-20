@@ -17,6 +17,7 @@ import gesture_recog from '../images/gesture_ds.png';
 import ind_robot_arm from '../images/abb_irb1600.png';
 import rbe3002 from '../images/rbe3002.png';
 import rbe3001 from '../images/rbe3001.png';
+import rbe2001 from '../images/rbe2001.png';
 import shapes from '../images/shapes.png';
 import sfis from '../images/sfis.png';
 import fpv from '../images/fpvdrone.png';
@@ -121,7 +122,7 @@ const projects = [
     description: 'Fitting shape primitives to simulated point cloud data.', 
     date: 'Oct 2023 - Dec 2023', 
     resources: [python, ros2 ,pcl],
-    tags: ['robotics', 'engineering', 'AI'] 
+    tags: ['undergraduate', 'robotics', 'engineering', 'AI'] 
   },
   { 
     id: 12, 
@@ -179,7 +180,7 @@ const projects = [
   },
   { 
     id: 18, 
-    image: voltaic, 
+    image: rbe2001, 
     title: 'Unified Mobile Robotics Final Projects', 
     description: 'A collection of the final projects from WPIs Intro to Robotics and Unified Robotics I and II courses.', 
     date: 'Oct 2023 - Dec 2023', 
