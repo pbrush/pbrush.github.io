@@ -27,7 +27,8 @@ function ProjectDetail() {
         // Custom layout for project with ID 2
         <div>
           <h2>{project.title}</h2>
-          <p> THIS PAGE?!</p>
+          <p> It would be so cool if this just worked</p>
+          <p> It might work? </p>
           <p>{project.description}</p>
           <ul>
             {project.resources.map((resource, index) => (
