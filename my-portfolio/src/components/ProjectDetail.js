@@ -29,6 +29,7 @@ function ProjectDetail() {
           <h2>{project.title}</h2>
           <p> It would be so cool if this just worked</p>
           <p> It might work? </p>
+          <p> Uuuuuhhhhh</p>
           <p>{project.description}</p>
           <ul>
             {project.resources.map((resource, index) => (

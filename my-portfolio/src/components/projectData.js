@@ -35,6 +35,7 @@ import ros from '../images/Ros_logo.png';
 import docker from '../images/docker.svg';
 import docker_words from '../images/docker_logo_words.png';
 import betaflight from '../images/betaflight.png';
+import drone_lineage from '../images/Drone_lineage.JPG';
 
 const projects = [
   { 
@@ -48,7 +49,7 @@ const projects = [
   },
   { 
     id: 2, 
-    image: bee, 
+    image: drone_lineage, 
     title: 'Micro Bee Demo', 
     description: 'Description of project two.', 
     date: 'Jul & Nov 2024', 
