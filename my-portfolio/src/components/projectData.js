@@ -10,6 +10,7 @@ import altium from '../images/altium.png';
 import ardupilot from '../images/ardu_logo_dark.png';
 import pcl from '../images/pcl.png'
 import huron_comp from '../images/huron_comparison.png';
+import huron_alone from '../images/huron_alone.png'
 import controls_proj from '../images/502.png';
 import motion_plannign_proj from '../images/550_proj3_1.png';
 import cube_swarm from '../images/cubeswarm.jpg';
@@ -23,6 +24,17 @@ import sfis from '../images/sfis.png';
 import fpv from '../images/fpvdrone.png';
 import rc from '../images/3dprccar.png';
 import soft_eng from '../images/soft_eng.png';
+import matlab from '../images/matlab_logo.gif';
+import arduino from '../images/Arduino_Logo.png';
+import gazebo from '../images/Gazebo_logo.png';
+import pytorch from '../images/PyTorch_logo.png';
+import opencv from '../images/OpenCV_logo.png';
+import solidworks from '../images/SolidWorks-Logo.jpg';
+import solidworks_cube from '../images/solidworks_cube.png';
+import ros from '../images/Ros_logo.png';
+import docker from '../images/docker.svg';
+import docker_words from '../images/docker_logo_words.png';
+import betaflight from '../images/betaflight.png';
 
 const projects = [
   { 
@@ -31,7 +43,7 @@ const projects = [
     title: 'Audio Depth', 
     description: 'Description of project two.', 
     date: 'May 2024 - Present', 
-    resources: [python, tensorflow, cpp, ros2, altium], // ros, arduino, tensorflow
+    resources: [python, tensorflow, cpp, ros2, altium, solidworks_cube], // ros, arduino, tensorflow
     tags: ['drones', 'electronics'] 
   },
   { 
@@ -49,7 +61,7 @@ const projects = [
     title: 'Various Motion Planning Projects', 
     description: 'Mini projects using Open Motion Planning Libarary.', 
     date: 'Aug 2024 - Present', 
-    resources: [cpp], 
+    resources: [cpp, docker_words], 
     tags: ['robotics', 'engineering'] 
   },
   { 
@@ -58,16 +70,16 @@ const projects = [
     title: 'Drone Control', 
     description: 'Implementation of PID and MPC controllers for a drone', 
     date: 'Oct 2024 - Present', 
-    resources: [python], //matlab
+    resources: [matlab], //matlab
     tags: ['robotics', 'engineering'] 
   },
   { 
     id: 5, 
-    image: huron_comp, 
+    image: huron_alone, 
     title: 'HURON', 
     description: 'Redesign of Humanoid Robot', 
     date: 'May 2024 - July 2024', 
-    resources: [python, cpp], // SW
+    resources: [solidworks_cube], // SW
     tags: ['drones', 'electronics'] 
   },
   { 
@@ -76,7 +88,7 @@ const projects = [
     title: '3lb Combat Robot: Voltaic', 
     description: 'Description of project one.', 
     date: 'Jan 2023 - Present', 
-    resources: [cpp, python], 
+    resources: [solidworks_cube], 
     tags: ['robotics', 'engineering'] 
   },
     { 
@@ -85,7 +97,7 @@ const projects = [
     title: 'Dynamics Arm Simulator', 
     description: 'MATLAB App simulating robot arm dynamics with RNE', 
     date: 'April 2024 - May 2024', 
-    resources: [python], // malab
+    resources: [matlab],
     tags: ['drones', 'electronics'] 
   },
   { 
@@ -94,7 +106,7 @@ const projects = [
     title: 'Gesture Recognition', 
     description: 'A comparison of CNN based networks vs Vision Transformers', 
     date: 'Mar 2024 - May 2024', 
-    resources: [python, cpp], // pytorch, opencv
+    resources: [python, pytorch, opencv],
     tags: ['drones', 'electronics'] 
   },
   { 
@@ -103,7 +115,7 @@ const projects = [
     title: 'SLAM in Static Environment', 
     description: 'ROS implementation of SLAM with Turtlebot', 
     date: 'Oct 2023 - Dec 2023', 
-    resources: [python], // ros, ubuntu, gazebo
+    resources: [python, ros, gazebo],
     tags: ['robotics', 'engineering', 'AI'] 
   },
   { 
@@ -112,7 +124,7 @@ const projects = [
     title: 'Cube Swarm', 
     description: 'Manufacturing and deployment of cube robots', 
     date: 'Aug 2023 - May 2023', 
-    resources: [python], // ??
+    resources: [solidworks_cube, python], // ??
     tags: ['robotics', 'engineering', 'AI'] 
   },
   { 
@@ -121,7 +133,7 @@ const projects = [
     title: 'Fitting Shape Primitives', 
     description: 'Fitting shape primitives to simulated point cloud data.', 
     date: 'Oct 2023 - Dec 2023', 
-    resources: [python, ros2 ,pcl],
+    resources: [python, ros2, gazebo, pcl],
     tags: ['undergraduate', 'robotics', 'engineering', 'AI'] 
   },
   { 
@@ -139,7 +151,7 @@ const projects = [
     title: 'RBE3001 Pick and Place', 
     description: 'Pick and Place operation using ABB IRB1600 and Cognex Camera', 
     date: 'Jan 2023 - Man 2023', 
-    resources: [python], // matlab
+    resources: [matlab], // matlab
     tags: ['robotics', 'engineering', 'AI'] 
   },
   { 
@@ -147,8 +159,7 @@ const projects = [
     image: sfis, 
     title: 'IQP: Makerspace for SFIS', 
     description: 'Development of STEAM curriculum and intitiative', 
-    date: 'Aug 2022 - Dec 2022', 
-    resources: [python], // matlab
+    date: 'Aug 2022 - Dec 2022',
     tags: ['robotics', 'engineering', 'AI'] 
   },
   { 
@@ -157,7 +168,7 @@ const projects = [
     title: '3D Printed RC Car', 
     description: 'Fully custom 3D printed RC Car', 
     date: 'Jun 2021 - Aug 2022', 
-    resources: [python], // matlab
+    resources: [solidworks_cube],
     tags: ['robotics', 'engineering', 'AI'] 
   },
   { 
@@ -166,7 +177,7 @@ const projects = [
     title: 'FPV Drone', 
     description: 'Custom FPV drone with 3D printed fame', 
     date: 'May 2021 - Jun 2022', 
-    resources: [python], // matlab
+    resources: [solidworks_cube, betaflight],
     tags: ['robotics', 'engineering', 'AI'] 
   },
   { 
@@ -175,7 +186,7 @@ const projects = [
     title: 'Service Request App for BWH', 
     description: 'Software engineering project in team of 10 practicing agile SCRUM to creat a service request app for Brigham and Women\'s Hospital', 
     date: 'Mar 2022 - May 2022', 
-    resources: [java], // matlab
+    resources: [java],
     tags: ['robotics', 'engineering', 'AI'] 
   },
   { 
@@ -184,6 +195,7 @@ const projects = [
     title: 'Unified Mobile Robotics Final Projects', 
     description: 'A collection of the final projects from WPIs Intro to Robotics and Unified Robotics I and II courses.', 
     date: 'Oct 2023 - Dec 2023', 
+    resources: [cpp, arduino], // matlab
     tags: ['robotics', 'engineering', 'AI'] 
   },
   { 
@@ -192,6 +204,7 @@ const projects = [
     title: "Dijkstra's Robot", 
     description: "A robot navigating a grid world with unknown obstacles using Dijkstra's Algorithm.", 
     date: 'Oct 2021 - Mar 2022', 
+    resources: [java], // matlab
     tags: ['robotics', 'algorithms', 'AI', 'motion planning', 'sensors', 'GUI'] 
   },
 ];

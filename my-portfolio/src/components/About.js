@@ -22,9 +22,26 @@ export default function About() {
 
         <div className="about-description">
           <h2>About Me</h2>
-          <p>This is the About page. Here's where you can talk about your background, interests, and professional experience.</p>
+          <p> This is the About page. Here's where you can talk about your background, interests, and professional experience.</p>
+        </div>
+
+      </div>
+
+      {/* SECOND ROW SUPPOSEDLY */}
+      <div className="about-content">
+        {/* EDUCATION */}
+        <div className="about-desccription">
+          <h2>Education</h2>
+          <p2>Here is my education</p2>
+        </div>
+        {/* AWARDS */}
+        <div>
+          <h2>Awards</h2>
+          <p>Seeing where this goes</p>
         </div>
       </div>
+
+
 
       {/* HYPERLINKS AND ICONS */}
 
