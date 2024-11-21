@@ -21,6 +21,7 @@ function ProjectDetail() {
           <p><strong>Description:</strong> {project.description}</p>
           <p><strong>Date:</strong> {project.date}</p>
           <p>Additional custom content for project 1...</p>
+          <p> Please just let this work</p>
         </div>
       ) : project.id === 2 ? (
         // Custom layout for project with ID 2
